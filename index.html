@@ -18,6 +18,8 @@
     />
 
     <link rel="stylesheet" type="text/css" href="./default.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
   </head>
   <body>
     <section class="s1">
@@ -43,10 +45,10 @@
             <h5 style="text-align: center; line-height: 0">Choose Theme</h5>
 
             <div id="theme-options-wrapper">
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="green-mode" class="theme-dot"></div>
-              <div id="purple-mode" class="theme-dot"></div>
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
 
             <p id="settings-note">
@@ -90,16 +92,28 @@
               a great team & projects that interest me.
             </p>
 
-            <hr />
-
-            <h4>TOP EXPERTISE</h4>
-
             <p>
-              Fullstack developer with primary focus on Django + React:
+              Fullstack developer with a focus on React:
               <a target="_blank" href="./images/keller_resume.pdf"
                 >Download Resume
               </a>
             </p>
+
+            <p>
+              Check me out on
+              <a target="_blank" href="https://www.linkedin.com/in/bert-keller/"
+                >Linked In
+              </a>
+            </p>
+
+            <p>
+              View code repositories on
+              <a target="_blank" href="./images/keller_resume.pdf">Github </a>
+            </p>
+
+            <hr />
+
+            <h4>Other Technologies</h4>
 
             <div id="skills">
               <ul>
@@ -121,16 +135,133 @@
           </div>
 
           <div class="social-links">
-            <img id="social_img" src="./images/follow.jpeg" />
-            <h3>Find me on Twitter & Youtube</h3>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h2 class="techText titleFont">Technical Skills</h2>
 
-            <a target="_blank" href="https://www.youtube.com/c/dennisivy"
-              >YouTube: @DennisIvy</a
-            >
-            <br />
-            <a target="_blank" href="https://twitter.com/dennisivy11"
-              >Twitter: @DennisIvy11</a
-            >
+                  <div class="skills-container">
+                    <div class="skill-box">
+                      <div class="skill-title">
+                        <div class="img">
+                          <img
+                            id="html-id"
+                            class="skill-icon"
+                            src="images/icons/html5.png"
+                            alt="HTML"
+                          />
+                        </div>
+                        <h3 class="skill-text">HTML 5</h3>
+                      </div>
+                    </div>
+
+                    <div class="skill-box">
+                      <div class="skill-title">
+                        <div class="img">
+                          <img
+                            class="skill-icon"
+                            src="images/icons/css.png"
+                            alt="CSS"
+                          />
+                        </div>
+                        <h3 class="skill-text">CSS</h3>
+                      </div>
+                    </div>
+
+                    <div class="skill-box">
+                      <div class="skill-title">
+                        <div class="img">
+                          <img
+                            class="skill-icon"
+                            src="images/icons/redux.png"
+                            alt="React"
+                          />
+                        </div>
+                        <h3 class="skill-text">React</h3>
+                      </div>
+                    </div>
+
+                    <div class="skill-box">
+                      <div class="skill-title">
+                        <div class="img">
+                          <img
+                            class="skill-icon"
+                            src="images/icons/redux2.png"
+                            alt="Redux"
+                          />
+                        </div>
+                        <h3 class="skill-text">Redux</h3>
+                      </div>
+                    </div>
+
+                    <div class="skill-box">
+                      <div class="skill-title">
+                        <div class="img">
+                          <img
+                            class="skill-icon"
+                            src="images/icons/javascript.png"
+                            alt="Javascript"
+                          />
+                        </div>
+                        <h3 class="skill-text">JavaScript</h3>
+                      </div>
+                    </div>
+
+                    <div class="skill-box">
+                      <div class="skill-title">
+                        <div class="img">
+                          <img
+                            class="skill-icon"
+                            src="images/icons/leaf.png"
+                            alt="MongoDB"
+                          />
+                        </div>
+                        <h3 class="skill-text">MongoDB</h3>
+                      </div>
+                    </div>
+
+                    <div class="skill-box">
+                      <div class="skill-title">
+                        <div class="img">
+                          <img
+                            class="skill-icon"
+                            src="images/icons/sql.png"
+                            alt="MySQL"
+                          />
+                        </div>
+                        <h3 class="skill-text">MySQL</h3>
+                      </div>
+                    </div>
+
+                    <div class="skill-box">
+                      <div class="skill-title">
+                        <div class="img">
+                          <img
+                            class="skill-icon"
+                            src="images/icons/nodejs.png"
+                            alt="Node"
+                          />
+                        </div>
+                        <h3 class="skill-text">NodeJS</h3>
+                      </div>
+                    </div>
+
+                    <div class="skill-box">
+                      <div class="skill-title">
+                        <div class="img">
+                          <img
+                            class="skill-icon"
+                            src="images/icons/firebase.png"
+                            alt="Firebase"
+                          />
+                        </div>
+                        <h4 class="skill-text">Firebase</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -196,7 +327,7 @@
         <form id="contact-form" action="">
           <label>Name</label>
           <input class="input-field" type="text" name="name" />
- 
+
           <label>Subject</label>
           <input class="input-field" type="text" name="subject" />
 
@@ -210,5 +341,7 @@
         </form>
       </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
