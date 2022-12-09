@@ -36,7 +36,7 @@
               <div id="dot-3" class="browser-dot"></div>
             </div>
             <ul id="navigation">
-              <li><a href="#">Contact</a></li>
+              <li><a href="#contact-me">Contact</a></li>
             </ul>
           </div>
 
@@ -64,7 +64,7 @@
 
                 <h3>What I Do</h3>
                 <p>
-                  I am a full stack web developer and a history buff! thanks for
+                  I am a full stack web developer and a history buff! Thanks for
                   stopping by!
                 </p>
                 <div id="corner-br" class="corner"></div>
@@ -83,17 +83,12 @@
             <h4>More about me</h4>
 
             <p>
-              I build new projects just to tickle my brain and love teaching
-              others how they're made.
+              I build new projects just to challenge my brain and love learning
+              new technologies
             </p>
 
             <p>
-              I keep busy teaching courses, I still take interviews in search of
-              a great team & projects that interest me.
-            </p>
-
-            <p>
-              Fullstack developer with a focus on React:
+              Fullstack web developer with a primary focus on React:
               <a target="_blank" href="./images/keller_resume.pdf"
                 >Download Resume
               </a>
@@ -104,11 +99,25 @@
               <a target="_blank" href="https://www.linkedin.com/in/bert-keller/"
                 >Linked In
               </a>
+
+              <img
+                src="images/icons/linked.svg"
+                style="height: 40px; margin-top: 10px"
+                alt=""
+              />
             </p>
 
             <p>
               View code repositories on
-              <a target="_blank" href="./images/keller_resume.pdf">Github </a>
+
+              <a target="_blank" href="https://github.com/bertwinkeller/utube"
+                >Github
+              </a>
+              <img
+                src="images/icons/github.svg"
+                style="height: 40px; margin-top: 10px"
+                alt=""
+              />
             </p>
 
             <hr />
@@ -117,11 +126,11 @@
 
             <div id="skills">
               <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Postgres</li>
+                <li>Express</li>
+                <li>JSON</li>
+                <li>Git/ Github</li>
+                <li>Scrum Methedologies</li>
+                <li>Postman</li>
               </ul>
 
               <ul>
@@ -151,7 +160,7 @@
                             alt="HTML"
                           />
                         </div>
-                        <h3 class="skill-text">HTML 5</h3>
+                        <h3 class="skill-text">HTML</h3>
                       </div>
                     </div>
 
@@ -274,15 +283,17 @@
         <div class="post-wrapper">
           <div>
             <div class="post">
-              <img class="thumbnail" src="images/dash.jpeg" alt="img" />
+              <img class="thumbnail" src="images/utube.png" alt="img" />
               <div class="post-preview">
-                <h6 class="post-title">Laboratory Management System</h6>
+                <h6 class="post-title">React Youtube Clone</h6>
                 <p class="post-intro">
-                  Designed built & mantained a the lab managment system for FOI
-                  Laboratories
+                  Built with React and Youtube V3 API from Rapid API
                 </p>
 
-                <a href="post.html">Read More</a>
+                <div class="site-links">
+                  <a href="https://bk-utube-clone.netlify.app/">Demo</a>
+                  <a href="https://github.com/bertwinkeller/utube">Source</a>
+                </div>
               </div>
             </div>
           </div>
@@ -293,26 +304,26 @@
               <div class="post-preview">
                 <h6 class="post-title">Online Store - CoursePost Title</h6>
                 <p class="post-intro">
-                  Online store with paypal payments intergration and guest user
-                  shopping
+                  Online store with paypal payments intergration
                 </p>
-
-                <a href="post.html">Read More</a>
+                <a href="post.html">Not Working Yet</a>
               </div>
             </div>
           </div>
 
           <div>
             <div class="post">
-              <img class="thumbnail" src="images/memb.jpeg" alt="img" />
+              <img class="thumbnail" src="images/gmaps.png" alt="img" />
               <div class="post-preview">
-                <h6 class="post-title">Membership Website</h6>
+                <h6 class="post-title">Google Maps Clone</h6>
                 <p class="post-intro">
-                  Modulized guide for online courses with step by step
-                  intructions
+                  Google Maps Clone with Google Maps & Places API
                 </p>
 
-                <a href="post.html">Read More</a>
+                <div class="site-links">
+                  <a href="https://berts-travel-app.netlify.app/">Demo</a>
+                  <a href="https://github.com/bertwinkeller/travel">Source</a>
+                </div>
               </div>
             </div>
           </div>
@@ -320,11 +331,16 @@
       </div>
     </section>
 
-    <section class="s2">
+    <section id="contact-me" class="s2">
       <div class="main-container">
         <h3 style="text-align: center">Get in Touch</h3>
 
-        <form id="contact-form" action="">
+        <form
+          id="contact-form"
+          target="_blank"
+          action="https://formsubmit.co/bertwinkeller@gmail.com"
+          method="POST"
+        >
           <label>Name</label>
           <input class="input-field" type="text" name="name" />
 

@@ -185,6 +185,11 @@ h6 {
   padding-bottom: 50px;
 }
 
+.site-links{
+  display: flex;
+  justify-content: space-between;
+}
+
 #profile_pic {
   display: block;
   margin: 0 auto;
